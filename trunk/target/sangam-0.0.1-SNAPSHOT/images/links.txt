@@ -1,0 +1,21 @@
+<ul style="list-style-type: none;">
+<li class="fleft socialbtn">
+<a href="#" target="_blank" onclick="window.open('http://www.facebook.com/sharer.php?u=http://raghu987.i8.com/compensation.html','facebook_window','width=650,height=450,resizable=no,scrollbars=no,toolbar=no,location=no,menubar=no'); return false;">
+<img border="0" align="absmiddle" src="http://raghu987.i8.com:8181/sangam/images/fb.gif" alt="Share on Facebook">
+</a>
+</li>
+<li class="fleft socialbtn">
+<a href="#" target="_blank" onclick="window.open('http://twitter.com/share?url=http://raghu987.i8.com/compensation.html','tweet_window','width=560,height=450,resizable=no,scrollbars=no,toolbar=no,location=no,menubar=no'); return false;">
+<img border="0" align="absmiddle" src="http://raghu987.i8.com:8181/sangam/images/tw.gif" alt="Share on Twitter">
+</a>
+</li>
+<li class="fleft socialbtn">
+<a href="#" target="_blank" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://raghu987.i8.com/compensation.html','linkedin_window','width=650,height=450,resizable=no,scrollbars=no,toolbar=no,location=no,menubar=no'); return false;">
+<img border="0" align="absmiddle" src="http://raghu987.i8.com:8181/sangam/images/li.gif" alt="Share on LinkedIn">
+</a>
+</li>
+</ul>
+
+
+
+

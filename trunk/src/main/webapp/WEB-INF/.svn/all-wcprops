@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/sangam/!svn/ver/14/trunk/src/main/webapp/WEB-INF
+END
+logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/sangam/!svn/ver/2/trunk/src/main/webapp/WEB-INF/logging.properties
+END
+google.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/sangam/!svn/ver/6/trunk/src/main/webapp/WEB-INF/google.properties
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/sangam/!svn/ver/5/trunk/src/main/webapp/WEB-INF/web.xml
+END

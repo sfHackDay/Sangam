@@ -1,0 +1,19 @@
+Vision
+1.Make it one click affair i.e. download and click once ready to use....minimum installation requirement
+2.Turn on/off specific features with web based interface with different oauth providers
+3.Providing proper web based testing environment before using it.
+4.Scalability support - Add support to install and run in distributed manner..
+5.Internationalization support 
+6.Making it extensible - different output formats -provide in xml output,js api to prefill the data fields
+
+
+
+Tasks
+
+1.Write a controller which will basically use scribe API and renders page which has the icons
+of all supported providers which will have a link containing the request token  
+
+
+2.Write a generic callback servlet which will be called by the oauth providers it fetches 
+get the verifier and fetch the auth token which will fetch the contacts and renders it in a paginated a way. 
+

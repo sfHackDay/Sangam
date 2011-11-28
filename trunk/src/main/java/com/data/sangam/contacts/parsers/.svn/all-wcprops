@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/sangam/!svn/ver/15/trunk/src/main/java/com/data/sangam/contacts/parsers
+END
+GoogleContactsParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/sangam/!svn/ver/16/trunk/src/main/java/com/data/sangam/contacts/parsers/GoogleContactsParser.java
+END
+YahooContactsParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/sangam/!svn/ver/16/trunk/src/main/java/com/data/sangam/contacts/parsers/YahooContactsParser.java
+END

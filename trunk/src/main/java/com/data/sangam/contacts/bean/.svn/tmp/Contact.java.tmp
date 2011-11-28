@@ -1,0 +1,50 @@
+package com.data.sangam.contacts.bean;
+
+public class Contact {
+	
+	public Contact(String name,String emailId){
+		
+		this.name=name;
+		this.emailId=emailId;
+	}
+	
+<<<<<<< .mine
+	public Contact(){
+		
+	};
+=======
+	private String fullName;
+	
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	private String firstName;
+>>>>>>> .r15
+	
+	private String emailId;
+	
+	private String name;
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+}

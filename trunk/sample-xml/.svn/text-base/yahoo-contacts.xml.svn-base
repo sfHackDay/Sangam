@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+    yahoo:count="1" yahoo:created="2011-07-22T05:56:31Z" yahoo:lang="en-US">
+    <diagnostics>
+        <publiclyCallable>false</publiclyCallable>
+        <user-time>37</user-time>
+        <service-time>14</service-time>
+        <build-version>19796</build-version>
+    </diagnostics>
+    <results>
+        <contact xmlns="http://social.yahooapis.com/v1/schema.rng"
+            yahoo:created="2011-07-22T05:56:11Z"
+            yahoo:updated="2011-07-22T05:56:11Z" yahoo:uri="http://social.yahooapis.com/v1/user/U5I4WBUC4IRIUBQK2TW4XNUC3Y/contact/50331649">
+            <isConnection>false</isConnection>
+            <id>50331649</id>
+            <fields yahoo:created="2011-07-22T05:56:11Z"
+                yahoo:updated="2011-07-22T05:56:11Z" yahoo:uri="http://social.yahooapis.com/v1/user/U5I4WBUC4IRIUBQK2TW4XNUC3Y/contact/50331649/email/50331649">
+                <id>50331649</id>
+                <type>email</type>
+                <value>amritha1811@yahoo.co.in</value>
+                <editedBy>OWNER</editedBy>
+            </fields>
+        </contact>
+    </results>
+</query>
+ 

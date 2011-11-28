@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"	
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd		
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- Scans the classpath of this application for @Components to deploy as beans -->
+	<context:component-scan base-package="com.data.sangam.contacts" />
+	
+	<!-- Configures the @Controller programming model -->
+	<annotation-driven />
+
+     <beans:bean id="viewResolver"
+        class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <beans:property name="viewClass"
+            value="org.springframework.web.servlet.view.JstlView" />
+        <beans:property name="prefix" value="/WEB-INF/views/contacts/" />
+        <beans:property name="suffix" value=".jsp" />
+    </beans:bean>
+    
+	<beans:bean id="propertyConfigurer"  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <beans:property name="ignoreResourceNotFound" value="true" />
+    <beans:property name="ignoreUnresolvablePlaceholders" value="false" />
+    <beans:property name="locations">
+      <beans:list>
+         <beans:value>classpath*:google.properties</beans:value>
+      </beans:list>
+    </beans:property>
+  </beans:bean>
+  
+  
+    
+<util:map id="googlePropMap" map-class="java.util.HashMap">
+  		 <beans:entry key="reqtoken.url"><beans:value>https://www.google.com/accounts/OAuthGetRequestToken</beans:value></beans:entry>
+        <beans:entry key="auth.url"><beans:value>https://www.google.com/accounts/OAuthAuthorizeToken?oauth_token</beans:value></beans:entry>
+        <beans:entry key="google.access.url"><beans:value>https://www.google.com/accounts/OAuthGetAccessToken</beans:value></beans:entry>
+         <beans:entry key="resource.scope"><beans:value>https://www.google.com/m8/feeds/</beans:value></beans:entry>
+        <beans:entry key="apikey"><beans:value>raghu987.i8.com</beans:value></beans:entry>
+         <beans:entry key="apisecret"><beans:value>ZRasp1DFOMR2YEafJoQZuaRv</beans:value></beans:entry>
+          <beans:entry key="callBackUrl"><beans:value>http://raghu987.i8.com:8181/sangam/app/contacts/callback-google</beans:value></beans:entry>
+          <beans:entry key="contacts.resource.url"><beans:value>https://www.google.com/m8/feeds/contacts/default/full//</beans:value></beans:entry>
+ </util:map>
+ 
+ <util:map id="yahooPropMap" map-class="java.util.HashMap">
+  		 <beans:entry key="reqtoken.url"><beans:value>https://api.login.yahoo.com/oauth/v2/get_request_token</beans:value></beans:entry>
+        <beans:entry key="auth.url"><beans:value>https://api.login.yahoo.com/oauth/v2/request_auth?oauth_token</beans:value></beans:entry>
+        <beans:entry key="apikey"><beans:value>dj0yJmk9MEM5SDlwdzc0Q1RjJmQ9WVdrOWVEUTFjalUwTXpRbWNHbzlNakV3TVRnNU9USTJNZy0tJnM9Y29uc3VtZXJzZWNyZXQmeD0wYg--</beans:value></beans:entry>
+         <beans:entry key="apisecret"><beans:value>ecc064937be395626fc8eb757f4cd2490d92f5ea</beans:value></beans:entry>
+          <beans:entry key="callBackUrl"><beans:value>http://raghu987.i8.com:8181/sangam/app/contacts/callback-yahoo</beans:value></beans:entry>
+          <beans:entry key="contacts.resource.url"><beans:value>http://social.yahooapis.com/v1/user/GUID/contacts?format=xml</beans:value></beans:entry>
+ </util:map>
+ 
+  <util:map id="linkedInPropMap" map-class="java.util.HashMap">
+  		 <beans:entry key="reqtoken.url"><beans:value>https://api.linkedin.com/uas/oauth/requestToken</beans:value></beans:entry>
+        <beans:entry key="auth.url"><beans:value>https://api.linkedin.com/uas/oauth/authorize?oauth_token</beans:value></beans:entry>
+        <beans:entry key="apikey"><beans:value>z3xmzgpd5jpl</beans:value></beans:entry>
+         <beans:entry key="apisecret"><beans:value>zy6C5OJxtJDwWgAQ</beans:value></beans:entry>
+          <beans:entry key="callBackUrl"><beans:value>http://raghu987.i8.com:8080/sangam/app/contacts/callback-linkedIn</beans:value></beans:entry>
+          <beans:entry key="contacts.resource.url"><beans:value>http://api.linkedin.com/v1/people/~/connections:(id,first-name)</beans:value></beans:entry>
+ </util:map>
+  <!--
+  
+<util:map id="googlePropMap" map-class="java.util.HashMap">
+  		 <beans:entry key="reqtoken.url"><beans:value>${reqtoken.url}</beans:value></beans:entry>
+        <beans:entry key="auth.url"><beans:value>${auth.url}</beans:value></beans:entry>
+        <beans:entry key="google.access.url"><beans:value>${access.url}</beans:value></beans:entry>
+         <beans:entry key="resource.scope"><beans:value>${resource.scope}</beans:value></beans:entry>
+        <beans:entry key="apikey"><beans:value>${apikey}</beans:value></beans:entry>
+         <beans:entry key="apisecret"><beans:value>${apisecret}</beans:value></beans:entry>
+ </util:map>
+ 
+	--><beans:bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+
+</beans:beans>

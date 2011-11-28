@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/sangam/!svn/ver/15/trunk/src/main/java/com/data/sangam/contacts/bean
+END
+Provider.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sangam/!svn/ver/8/trunk/src/main/java/com/data/sangam/contacts/bean/Provider.java
+END
+Contact.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/sangam/!svn/ver/16/trunk/src/main/java/com/data/sangam/contacts/bean/Contact.java
+END
+OAuthInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/sangam/!svn/ver/13/trunk/src/main/java/com/data/sangam/contacts/bean/OAuthInfo.java
+END
+ContactImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/sangam/!svn/ver/11/trunk/src/main/java/com/data/sangam/contacts/bean/ContactImpl.java
+END
